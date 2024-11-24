@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AuthService.Tests\**" />
+    <Content Remove="AuthService.Tests\**" />
+    <EmbeddedResource Remove="AuthService.Tests\**" />
+    <None Remove="AuthService.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
 	 <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
 	<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
 	<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" /> 
@@ -27,7 +34,6 @@
 
   <ItemGroup>
     <Folder Include="Data\Interfaces\" />
-    <Folder Include="AuthService.Tests\" />
     <Folder Include="Repositories\" />
     <Folder Include="Services\Interfaces\" />
   </ItemGroup>
