@@ -28,10 +28,7 @@ namespace CalculX.AuthService.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
         {
-            try
-            {
 
-            
             var user = new ApplicationUser
             {
                 UserName = model.Email,
@@ -48,15 +45,9 @@ namespace CalculX.AuthService.Controllers
             {
                 return Ok();
             }
-            
 
             return BadRequest(result.Errors);
-            }
-            catch (Exception ex)
-            {
 
-                throw ex.InnerException;
-            }
         }
 
         [HttpPost("login")]
