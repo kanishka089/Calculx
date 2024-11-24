@@ -25,6 +25,8 @@
 
   <ItemGroup>
     <Folder Include="Data\Interfaces\" />
+    <Folder Include="AuthService.Tests\" />
+    <Folder Include="Repositories\" />
     <Folder Include="Services\Interfaces\" />
   </ItemGroup>
 
