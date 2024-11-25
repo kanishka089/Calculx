@@ -13,9 +13,9 @@ namespace CalculX.AuthService.Services
             _repository = repository;
         }
 
-        public void CheckAuthorization(Ledger auth)
+        public void CheckAuthorization(Ledger ledger)
         {
-            _repository.GetAuthorization(auth);
+            _repository.GetAuthorization(ledger);
         }
     }
 }
