@@ -1,4 +1,5 @@
 ﻿using CalculX.AuthService.Models;
+using CalculX.GeneralLedgerService.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CalculX.AuthService.Data
@@ -7,6 +8,6 @@ namespace CalculX.AuthService.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Ledger> Auth { get; set; }
+        public DbSet<Account> Account { get; set; }
     }
 }
