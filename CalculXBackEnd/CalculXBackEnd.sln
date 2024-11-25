@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculX.AuthService", "Calc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculX.GeneralLedgerService", "CalculX.GeneralLedgerService\CalculX.GeneralLedgerService.csproj", "{245ABF1E-CB05-487C-840B-AF9F92BCC38A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Test", "Test\AuthService.Test\AuthService.Test.csproj", "{65A61DB9-F80E-45AA-8166-2EE9B0498626}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculX.AuthService.Test", "CalculX.Test\CalculX.AuthService.Test\CalculX.AuthService.Test.csproj", "{C02E312F-3555-4C54-9F61-D81AAE357F70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{245ABF1E-CB05-487C-840B-AF9F92BCC38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{245ABF1E-CB05-487C-840B-AF9F92BCC38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{245ABF1E-CB05-487C-840B-AF9F92BCC38A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65A61DB9-F80E-45AA-8166-2EE9B0498626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65A61DB9-F80E-45AA-8166-2EE9B0498626}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65A61DB9-F80E-45AA-8166-2EE9B0498626}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65A61DB9-F80E-45AA-8166-2EE9B0498626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02E312F-3555-4C54-9F61-D81AAE357F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02E312F-3555-4C54-9F61-D81AAE357F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02E312F-3555-4C54-9F61-D81AAE357F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02E312F-3555-4C54-9F61-D81AAE357F70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
