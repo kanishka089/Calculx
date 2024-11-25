@@ -4,6 +4,7 @@ services:
       context: ./CalculX.AuthService
       dockerfile: Dockerfile
     image: calculx-authservice
+    container_name: calculx_authservice
     ports:
       - "8080:8080"
     environment:
@@ -16,12 +17,25 @@ services:
       context: ./CalculX.GeneralLedgerService
       dockerfile: Dockerfile
     image: calculx-generalledgerservice
+    container_name: calculx_generalledgerservice
     ports:
       - "8081:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
     networks:
       - calculx-network
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: calculx_sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrongPassword123
+    networks:
+      - calculx-network
+    volumes:
+      - sqlserver-data:/var/opt/mssql
 
 networks:
   calculx-network:
