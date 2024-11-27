@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculX.GeneralLedgerServic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculX.AuthService.Test", "CalculX.Test\CalculX.AuthService.Test\CalculX.AuthService.Test.csproj", "{C02E312F-3555-4C54-9F61-D81AAE357F70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculX.AIAssistantService", "CalculX.AIAssistantService\CalculX.AIAssistantService.csproj", "{BEF9A77D-D311-452A-8D0F-3D7D76467F06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C02E312F-3555-4C54-9F61-D81AAE357F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C02E312F-3555-4C54-9F61-D81AAE357F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C02E312F-3555-4C54-9F61-D81AAE357F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF9A77D-D311-452A-8D0F-3D7D76467F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF9A77D-D311-452A-8D0F-3D7D76467F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF9A77D-D311-452A-8D0F-3D7D76467F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF9A77D-D311-452A-8D0F-3D7D76467F06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
