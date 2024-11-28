@@ -1,0 +1,6 @@
+@CalculX.AIAssistantService_HostAddress = http://localhost:5273
+
+GET {{CalculX.AIAssistantService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
