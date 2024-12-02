@@ -1,4 +1,4 @@
-﻿namespace CalculXBase.Enums;
+﻿namespace CalculX.Base.Enums;
 
 public enum Status
 {

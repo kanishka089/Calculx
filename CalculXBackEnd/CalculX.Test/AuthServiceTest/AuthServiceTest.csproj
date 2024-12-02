@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Calculx.Services\AuthService\AuthService.csproj" />
     <ProjectReference Include="..\..\CalculX.WebApi\CalculX.WebApi.csproj" />
     <ProjectReference Include="..\..\CalculxServices\AuthService\AuthService.csproj" />
   </ItemGroup>

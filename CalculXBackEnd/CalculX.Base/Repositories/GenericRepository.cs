@@ -1,5 +1,5 @@
-﻿using CalculXBase.Repositories.Interfaces;
-using CalculXBase.Services;
+﻿using CalculX.Base.Repositories.Interfaces;
+using CalculX.Base.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace KatunayakePayOffice.Repositories;

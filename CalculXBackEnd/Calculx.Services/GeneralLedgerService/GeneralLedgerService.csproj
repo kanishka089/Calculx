@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CalculXBase\CalculXBase.csproj" />
+    <ProjectReference Include="..\..\CalculX.Base\CalculX.Base.csproj" />
+    <ProjectReference Include="..\..\CalculXBase\CalculX.Base.csproj" />
   </ItemGroup>
 
 </Project>

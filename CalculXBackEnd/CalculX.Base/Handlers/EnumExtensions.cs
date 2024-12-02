@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace CalculXBase.Handlers;
+namespace CalculX.Base.Handlers;
 
 public static class EnumExtensions
 {

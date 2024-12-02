@@ -18,7 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CalculXBase\CalculXBase.csproj" />
+    <ProjectReference Include="..\CalculX.Base\CalculX.Base.csproj" />
+    <ProjectReference Include="..\Calculx.Services\AIAssistantService\AIAssistantService.csproj" />
+    <ProjectReference Include="..\Calculx.Services\AuthService\AuthService.csproj" />
+    <ProjectReference Include="..\CalculXBase\CalculX.Base.csproj" />
     <ProjectReference Include="..\CalculxServices\AIAssistantService\AIAssistantService.csproj" />
     <ProjectReference Include="..\CalculxServices\AuthService\AuthService.csproj" />
   </ItemGroup>

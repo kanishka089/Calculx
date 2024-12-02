@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using System.Net.Http.Json;
 
-namespace CalculXBase.Services;
+namespace CalculX.Base.Services;
 
 public class HttpService (IHttpClientFactory httpClientFactory)
 {
