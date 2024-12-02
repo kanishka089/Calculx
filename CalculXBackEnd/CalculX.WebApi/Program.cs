@@ -1,7 +1,7 @@
 using CalculX.WebApi;
-using CalculX.Base.Handlers;
 using Microsoft.EntityFrameworkCore;
 using AuthService;
+using CalculX.Base.Handlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
