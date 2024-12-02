@@ -3,7 +3,7 @@ using System.Reflection;
 using MethodDecorator.Fody.Interfaces;
 using System.Text.Json;
 
-namespace CalculXBase.Services;
+namespace CalculX.Base.Services;
 
 [AttributeUsage(AttributeTargets.Method | AttributeTargets.Constructor | AttributeTargets.Module | AttributeTargets.Assembly)]
 public class LogExecutionAttribute : Attribute, IMethodDecorator

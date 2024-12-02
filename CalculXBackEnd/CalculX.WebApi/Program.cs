@@ -1,5 +1,5 @@
 using CalculX.WebApi;
-using CalculXBase.Handlers;
+using CalculX.Base.Handlers;
 using Microsoft.EntityFrameworkCore;
 using AuthService;
 

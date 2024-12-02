@@ -1,7 +1,7 @@
-﻿using CalculXBase.Entities;
+﻿using CalculX.Base.Entities;
 using Microsoft.AspNetCore.Http;
 
-namespace CalculXBase.Services;
+namespace CalculX.Base.Services;
 
 public class ResourceService
 {

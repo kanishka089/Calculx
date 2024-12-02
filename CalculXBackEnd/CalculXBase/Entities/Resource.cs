@@ -1,8 +1,8 @@
-﻿using CalculXBase.Enums;
+﻿using CalculX.Base.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CalculXBase.Entities;
+namespace CalculX.Base.Entities;
 
 public class Resource
 {

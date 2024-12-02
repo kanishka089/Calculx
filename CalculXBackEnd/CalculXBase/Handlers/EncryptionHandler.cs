@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace CalculXBase.Handlers;
+namespace CalculX.Base.Handlers;
 
 public class EncryptionHandler
 {

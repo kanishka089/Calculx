@@ -1,4 +1,4 @@
-﻿using CalculXBase.Repositories.Interfaces;
+﻿using CalculX.Base.Repositories.Interfaces;
 using GeneralLedgerService.Entities;
 using System;
 using System.Collections.Generic;

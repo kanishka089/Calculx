@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace CalculXBase.Entities;
+namespace CalculX.Base.Entities;
 
 public abstract class EntityBase
 {

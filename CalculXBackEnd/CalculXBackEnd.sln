@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculX.WebApi", "CalculX.WebApi\CalculX.WebApi.csproj", "{E0AF968E-8044-4B36-A0F7-78F8F52AAACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculXBase", "CalculXBase\CalculXBase.csproj", "{9A140084-5647-48CF-8E28-4EF1C6905315}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculX.Base", "CalculXBase\CalculX.Base.csproj", "{9A140084-5647-48CF-8E28-4EF1C6905315}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{08C08022-1415-47CF-AB46-A15DD521C915}"
 EndProject
