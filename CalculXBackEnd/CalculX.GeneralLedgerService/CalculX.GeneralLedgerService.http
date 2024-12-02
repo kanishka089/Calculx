@@ -1,6 +1,0 @@
-@CalculX.GeneralLedgerService_HostAddress = http://localhost:5164
-
-GET {{CalculX.GeneralLedgerService_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
