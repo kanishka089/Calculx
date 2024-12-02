@@ -19,7 +19,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: 9.0.x
     - name: Restore dependencies
       run: dotnet restore
       working-directory: CalculXBackEnd
@@ -28,4 +28,4 @@ jobs:
       working-directory: CalculXBackEnd
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: CalculXBackEnd/CalculX.Test/CalculX.AuthService.Test
+      working-directory: CalculXBackEnd/CalculX.Test/AuthServiceTest
