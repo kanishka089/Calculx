@@ -2,9 +2,9 @@
 using CalculX.Base.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace KatunayakePayOffice.Repositories;
+namespace CalculX.Base.Repositories;
 
-public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
+public class GenericRepository<T> : IGenericRepository<T> where T : class
 {
     protected readonly DbSet<T> _dbSet;
     protected readonly DbContext _context;
