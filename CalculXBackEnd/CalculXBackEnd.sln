@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService", "Calculx.Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralLedgerService", "Calculx.Services\GeneralLedgerService\GeneralLedgerService.csproj", "{010AEDC3-92E9-46DA-B374-CF718B1C0271}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "Calculx.Services\UserService\UserService.csproj", "{0EA92F0D-44DB-4627-A7B6-93EBAB2EC25E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{010AEDC3-92E9-46DA-B374-CF718B1C0271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{010AEDC3-92E9-46DA-B374-CF718B1C0271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{010AEDC3-92E9-46DA-B374-CF718B1C0271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA92F0D-44DB-4627-A7B6-93EBAB2EC25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA92F0D-44DB-4627-A7B6-93EBAB2EC25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA92F0D-44DB-4627-A7B6-93EBAB2EC25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA92F0D-44DB-4627-A7B6-93EBAB2EC25E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{2F876B92-1D03-400C-AC73-6827DDCBCB1C} = {08C08022-1415-47CF-AB46-A15DD521C915}
 		{3FFDFFF8-2D34-41E2-AB5E-93EC9EFA8338} = {08C08022-1415-47CF-AB46-A15DD521C915}
 		{010AEDC3-92E9-46DA-B374-CF718B1C0271} = {08C08022-1415-47CF-AB46-A15DD521C915}
+		{0EA92F0D-44DB-4627-A7B6-93EBAB2EC25E} = {08C08022-1415-47CF-AB46-A15DD521C915}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F84A0DD-F2FA-418D-AF9E-B0ABA384D4E8}

@@ -1,6 +1,6 @@
-﻿using GeneralLedgerService.Entities;
+﻿using CalculX.Base.Repositories;
+using GeneralLedgerService.Entities;
 using GeneralLedgerService.Repositories.Interfaces;
-using KatunayakePayOffice.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
