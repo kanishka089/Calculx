@@ -1,15 +1,14 @@
-using CalculX.WebApi;
-using Microsoft.EntityFrameworkCore;
 using AuthService;
-using UserService;
-using CalculX.Base.Handlers;
-using CalculX.Base.Repositories.Interfaces;
-using CalculX.Base.Repositories;
 using AutoMapper;
-using CalculX.Base.Mapping;
+using CalculX.Base.Handlers;
+using CalculX.Base.Repositories;
+using CalculX.Base.Repositories.Interfaces;
+using CalculX.WebApi;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using UserService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,7 +31,7 @@ builder.Services.AddCors(options =>
 
 //builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options =>
 //    options.UseSqlServer(config.ConnectionString));
-builder.Services.AddDbContext<DbContext,ApplicationDbContext>(options =>
+builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAuthServices();
