@@ -1,13 +1,21 @@
 using CalculX.WebApi;
 using Microsoft.EntityFrameworkCore;
 using AuthService;
+using UserService;
 using CalculX.Base.Handlers;
+using CalculX.Base.Repositories.Interfaces;
+using CalculX.Base.Repositories;
+using AutoMapper;
+using CalculX.Base.Mapping;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var configuration = builder.Configuration;
-var config = new Configuration();
-configuration.Bind("Configuration", config);
+//var configuration = builder.Configuration;
+//var config = new Configuration();
+//configuration.Bind("Configuration", config);
 
 builder.Services.AddCors(options =>
 {
@@ -20,8 +28,12 @@ builder.Services.AddCors(options =>
         });
 });
 
-builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options =>
-    options.UseSqlServer(config.ConnectionString));
+
+
+//builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options =>
+//    options.UseSqlServer(config.ConnectionString));
+builder.Services.AddDbContext<DbContext,ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAuthServices();
 
@@ -30,7 +42,44 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
 builder.Services.AddSingleton<EncryptionHandler>();
+
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new MappingProfile());
+});
+
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddControllers();
+
+builder.Services.AddUserServices();
+//builder.Services.AddAuthServices();
+
+
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:SecretKey"]);
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -42,7 +91,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

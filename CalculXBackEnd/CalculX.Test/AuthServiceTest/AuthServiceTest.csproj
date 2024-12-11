@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
     <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="xunit" Version="2.9.2" />
@@ -19,7 +18,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Calculx.Services\AuthService\AuthService.csproj" />
     <ProjectReference Include="..\..\CalculX.WebApi\CalculX.WebApi.csproj" />
-    <ProjectReference Include="..\..\CalculxServices\AuthService\AuthService.csproj" />
   </ItemGroup>
 
   <ItemGroup>
