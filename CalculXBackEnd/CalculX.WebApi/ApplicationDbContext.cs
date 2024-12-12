@@ -15,10 +15,9 @@ namespace CalculX.WebApi
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.AddAuthServiceDbSet();
             modelBuilder.AddUserServiceDbSet();
-
-            base.OnModelCreating(modelBuilder);
         }
     }
 
