@@ -12,12 +12,10 @@ namespace CalculX.WebApi.Controllers
     {
         private readonly IAccountingService _accountingService;
         private readonly IMapper _mapper;
-        private readonly IConfiguration _configuration;
-        public AccountingController(IAccountingService accountingService, IMapper mapper, IConfiguration configuration)
+        public AccountingController(IAccountingService accountingService, IMapper mapper)
         {
             _accountingService = accountingService;
             _mapper = mapper;
-            _configuration = configuration;
         }
         [HttpPost("add-account")]
         public async Task<IActionResult> Register([FromBody] AccountModel model)
