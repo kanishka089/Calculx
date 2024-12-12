@@ -28,11 +28,8 @@ builder.Services.AddCors(options =>
 });
 
 
-
-//builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options =>
-//    options.UseSqlServer(config.ConnectionString));
-builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<DbContext, ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//builder.Services.AddDbContext<DbContext, ApplicationDbContext>(Options => Options.UseMongoDB(builder.Configuration.GetConnectionString("MongoDB:ConnectionString"), builder.Configuration["MongoDB:DatabaseName"]));
 
 builder.Services.AddAuthServices();
 

@@ -1,14 +1,6 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using CalculX.Base.Enums;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Reflection;
-using CalculX.Base.Enums;
+using System.ComponentModel.DataAnnotations.Schema;
 using UserService.Enum;
 
 namespace UserService.Entities
