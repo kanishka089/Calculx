@@ -1,4 +1,5 @@
-﻿using AuthService;
+﻿using AccountingService;
+using AuthService;
 using Microsoft.EntityFrameworkCore;
 using UserService;
 using UserService.Entities;
@@ -18,6 +19,7 @@ namespace CalculX.WebApi
             base.OnModelCreating(modelBuilder);
             modelBuilder.AddAuthServiceDbSet();
             modelBuilder.AddUserServiceDbSet();
+            modelBuilder.AddAccountingServiceDbSet();
         }
     }
 

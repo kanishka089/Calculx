@@ -1,8 +1,8 @@
-﻿using UserService.Entities;
-using UserService.Repositories.Interfaces;
-using UserService.Services.Interfaces;
+﻿using AccountingService.Entities;
+using AccountingService.Repositories.Interfaces;
+using AccountingService.Services.Interfaces;
 
-namespace UserService.Services
+namespace AccountingService.Services
 {
     public class AccountingServices : IAccountingService
     {
@@ -13,7 +13,7 @@ namespace UserService.Services
             _accountingRepository = accountingRepository;
         }
 
-        Task IAccountingService.AddUserAsync(Account account)
+        public Task AddAccountAsync(Account account)
         {
             throw new NotImplementedException();
         }

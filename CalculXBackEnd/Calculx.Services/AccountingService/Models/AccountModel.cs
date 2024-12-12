@@ -1,8 +1,8 @@
-﻿using AutoMapper;
+﻿using AccountingService.Entities;
+using AutoMapper;
 using CalculX.Base.Mapping;
-using UserService.Entities;
 
-namespace UserService.Models
+namespace AccountingService.Models
 {
     public class AccountModel : IMapBoth<Account>
     {

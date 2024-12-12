@@ -1,7 +1,7 @@
-﻿using CalculX.Base.Repositories.Interfaces;
-using UserService.Entities;
+﻿using AccountingService.Entities;
+using CalculX.Base.Repositories.Interfaces;
 
-namespace UserService.Repositories.Interfaces
+namespace AccountingService.Repositories.Interfaces
 {
     public interface IAccountingRepository : IGenericRepository<Account>
     {
