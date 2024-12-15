@@ -1,9 +1,9 @@
-﻿using UserService.Entities;
+﻿using AccountingService.Entities;
 
-namespace UserService.Services.Interfaces
+namespace AccountingService.Services.Interfaces
 {
     public interface IAccountingService
     {
-        Task AddUserAsync(Account account);
+        Task AddAccountAsync(Account account);
     }
 }
