@@ -11,9 +11,13 @@ namespace AccountingService.Repositories
         {
         }
 
-        Task<Account> IAccountingRepository.GetAccountAsync(string email)
+        public async Task<Account> GetDetailsByAccountNumberAsync(string accountNumber)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrWhiteSpace(accountNumber))
+                throw new ArgumentException("Account Number cannot be null or empty", nameof(accountNumber));
+
+            var g = await _dbSet.FirstOrDefaultAsync(x => x.AccountNumber.ToLower() == accountNumber);
+            return g;
         }
     }
 

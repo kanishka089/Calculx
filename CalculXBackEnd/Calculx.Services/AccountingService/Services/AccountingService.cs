@@ -13,9 +13,22 @@ namespace AccountingService.Services
             _accountingRepository = accountingRepository;
         }
 
-        public Task AddAccountAsync(Account account)
+        public async Task AddAccountAsync(Account account)
         {
-            throw new NotImplementedException();
+            await _accountingRepository.AddAsync(account);
+        }
+
+        public async Task DeleteAccountAsync(Account account)
+        {
+            await _accountingRepository.RemoveAsync(account);
+        }
+        public async Task UpdateAccountAsync(Account account)
+        {
+            await _accountingRepository.UpdateAsync(account);
+        }
+        public async Task GetDetailsByAccountNumberAsync(string accountNumber)
+        {
+            await _accountingRepository.GetDetailsByAccountNumberAsync(accountNumber);
         }
     }
 }
