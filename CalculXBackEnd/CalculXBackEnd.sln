@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "Calculx.Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingService", "Calculx.Services\AccountingService\AccountingService.csproj", "{6EF06FC8-E99D-4336-AA04-B33E92758E2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenantService", "Calculx.Services\TenantService\TenantService.csproj", "{CC6F26D5-1138-4E2B-BD26-E5963441EE18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{6EF06FC8-E99D-4336-AA04-B33E92758E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EF06FC8-E99D-4336-AA04-B33E92758E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EF06FC8-E99D-4336-AA04-B33E92758E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC6F26D5-1138-4E2B-BD26-E5963441EE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC6F26D5-1138-4E2B-BD26-E5963441EE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC6F26D5-1138-4E2B-BD26-E5963441EE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC6F26D5-1138-4E2B-BD26-E5963441EE18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{010AEDC3-92E9-46DA-B374-CF718B1C0271} = {08C08022-1415-47CF-AB46-A15DD521C915}
 		{0EA92F0D-44DB-4627-A7B6-93EBAB2EC25E} = {08C08022-1415-47CF-AB46-A15DD521C915}
 		{6EF06FC8-E99D-4336-AA04-B33E92758E2B} = {08C08022-1415-47CF-AB46-A15DD521C915}
+		{CC6F26D5-1138-4E2B-BD26-E5963441EE18} = {08C08022-1415-47CF-AB46-A15DD521C915}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F84A0DD-F2FA-418D-AF9E-B0ABA384D4E8}

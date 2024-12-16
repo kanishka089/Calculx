@@ -4,7 +4,7 @@ public interface IGenericRepository<T> where T : class
 {
     Task<IEnumerable<T>> GetAllAsync();
 
-    Task<T?> GetByIdAsync(string id);
+    Task<T?> GetByIdAsync(int id);
 
     Task AddAsync(T entity);
 
@@ -16,5 +16,5 @@ public interface IGenericRepository<T> where T : class
 
     Task RemoveRangeAsync(IEnumerable<T> entities);
 
-    Task<bool> ExistsAsync(string id);
+    Task<bool> ExistsAsync(int id);
 }

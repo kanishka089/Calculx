@@ -31,6 +31,7 @@
     <ProjectReference Include="..\Calculx.Services\AccountingService\AccountingService.csproj" />
     <ProjectReference Include="..\Calculx.Services\AIAssistantService\AIAssistantService.csproj" />
     <ProjectReference Include="..\Calculx.Services\AuthService\AuthService.csproj" />
+    <ProjectReference Include="..\Calculx.Services\TenantService\TenantService.csproj" />
     <ProjectReference Include="..\Calculx.Services\UserService\UserService.csproj" />
   </ItemGroup>
 

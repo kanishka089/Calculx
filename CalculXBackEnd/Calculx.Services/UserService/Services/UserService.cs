@@ -43,6 +43,11 @@ namespace UserService.Services
             return user.ResetToken;
         }
 
+        public async Task<User>Get(int id)
+        {
+           return await _userRepository.GetByIdAsync(id);
+        }
+
         private static string HashPassword(string password)
         {
             using var sha256 = SHA256.Create();

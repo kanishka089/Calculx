@@ -10,6 +10,7 @@ namespace UserService.Services.Interfaces
     public  interface IUserService
     {
         Task AddUserAsync(User user, string password);
+        Task<User> Get(int id);
         Task<User> LoginAsync(string email, string password);
         Task<string> GeneratePasswordResetTokenAsync(string email);
     }

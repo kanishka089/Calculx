@@ -22,7 +22,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
     }
 
     [LogExecution]
-    public virtual async Task<T?> GetByIdAsync(string id)
+    public virtual async Task<T?> GetByIdAsync(int id)
     {
         return await _dbSet.FindAsync(id);
     }
@@ -78,7 +78,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
     }
 
     [LogExecution]
-    public virtual async Task<bool> ExistsAsync(string id)
+    public virtual async Task<bool> ExistsAsync(int id)
     {
         return await GetByIdAsync(id) != null;
     }
