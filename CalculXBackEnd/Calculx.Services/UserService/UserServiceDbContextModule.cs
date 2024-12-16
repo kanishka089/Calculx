@@ -12,6 +12,11 @@ namespace UserService
     {
         public static void AddUserServiceDbSet(this ModelBuilder modelBuilder)
         {
+            //modelBuilder.Entity<User>(builder =>
+            //     {
+            //    builder.HasIndex(c => c.TenantId);
+            //    builder.HasQueryFilter(c => c.TenantId == tenantId);
+            //});
             modelBuilder.Entity<User>();
         }
     }

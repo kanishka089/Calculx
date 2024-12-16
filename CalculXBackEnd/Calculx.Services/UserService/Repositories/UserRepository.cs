@@ -21,7 +21,8 @@ namespace UserService.Repositories
             if (string.IsNullOrWhiteSpace(email))
                 throw new ArgumentException("Email cannot be null or empty", nameof(email));
 
-            return await _dbSet.FirstOrDefaultAsync(x => x.Email.ToLower() == email.ToLower());
+            var g = await _dbSet.FirstOrDefaultAsync(x => x.Email.ToLower() == email.ToLower());
+            return g;
         }
     }
 

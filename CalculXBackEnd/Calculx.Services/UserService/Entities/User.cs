@@ -11,6 +11,8 @@ namespace UserService.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
+        public int TenantId { get; set; }
+        [Required]
         [MaxLength(255)]
         public string FirstName { get; set; }
         [Required]

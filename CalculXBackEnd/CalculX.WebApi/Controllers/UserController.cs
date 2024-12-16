@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CalculX.WebApi.Utilities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -38,18 +39,14 @@ namespace CalculX.WebApi.Controllers
             return Ok("User registered successfully.");
         }
 
+        [AllowAnonymous]
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel request)
         {
-            // Attempt to authenticate the user
             var user = await _userService.LoginAsync(request.Email, request.Password);
             if (user == null) return Unauthorized("Invalid credentials.");
-
-            // Generate JWT token
             var jwtGenerator = new JWTGenerator(_configuration);
-            var token = jwtGenerator.CreateToken(user); // Call CreateToken to get the JWT
-
-            // Return success response with the token
+            var token = jwtGenerator.GenerateJwtToken(user.Id,user.TenantId);
             return Ok(new { Message = "Login successful.", Token = token });
         }
 
@@ -60,6 +57,12 @@ namespace CalculX.WebApi.Controllers
             if (token == null) return NotFound("User not found.");
 
             return Ok(new { ResetToken = token });
+        }
+
+        [HttpGet("get")]
+        public async Task<IActionResult>Get(int Id)
+        {
+           return Ok(await _userService.Get(Id));
         }
 
     }
