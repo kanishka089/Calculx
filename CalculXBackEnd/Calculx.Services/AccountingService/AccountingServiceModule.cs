@@ -1,10 +1,10 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using UserService.Repositories;
-using UserService.Repositories.Interfaces;
-using UserService.Services;
-using UserService.Services.Interfaces;
+﻿using AccountingService.Repositories;
+using AccountingService.Repositories.Interfaces;
+using AccountingService.Services;
+using AccountingService.Services.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace UserService
+namespace AccountingService
 {
     public static class AccountingServiceModule
     {

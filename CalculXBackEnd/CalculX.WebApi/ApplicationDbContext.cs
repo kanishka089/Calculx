@@ -1,4 +1,5 @@
-﻿using AuthService;
+﻿using AccountingService;
+using AuthService;
 using CalculX.Base.Services;
 using Microsoft.EntityFrameworkCore;
 using TenantService.Entities;
@@ -35,6 +36,7 @@ namespace CalculX.WebApi
            // int tenantId = _tenantProvider.GetTenantId();
             // modelBuilder.AddUserServiceDbSet(tenantId); // Pass tenant ID dynamically
             modelBuilder.AddUserServiceDbSet();
+            modelBuilder.AddAccountingServiceDbSet();
             modelBuilder.AddTenantServiceDbSet();
         }
     }

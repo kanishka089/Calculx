@@ -1,11 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using UserService.Entities;
+﻿using AccountingService.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace UserService
+namespace AccountingService
 {
     public static class AccountingServiceDbContextModule
     {
-        public static void AddUserServiceDbSet(this ModelBuilder modelBuilder)
+        public static void AddAccountingServiceDbSet(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>();
         }

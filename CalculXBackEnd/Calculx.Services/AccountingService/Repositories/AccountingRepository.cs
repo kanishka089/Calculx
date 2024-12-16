@@ -1,9 +1,9 @@
-﻿using CalculX.Base.Repositories;
+﻿using AccountingService.Entities;
+using AccountingService.Repositories.Interfaces;
+using CalculX.Base.Repositories;
 using Microsoft.EntityFrameworkCore;
-using UserService.Entities;
-using UserService.Repositories.Interfaces;
 
-namespace UserService.Repositories
+namespace AccountingService.Repositories
 {
     public class AccountingRepository : GenericRepository<Account>, IAccountingRepository
     {
